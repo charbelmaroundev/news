@@ -1,5 +1,7 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
+
 include("connection.php");
 
 $query = $mysqli->prepare("SELECT * FROM articles");
@@ -14,5 +16,7 @@ while($a = $array->fetch_assoc()){
 
 $json = json_encode($response);
 echo $json;
+
+// echo "haha";
 
 ?>
