@@ -16,4 +16,5 @@ $.getJSON("http://localhost/news/articles.php", data => {
         `;
         articles.push(article)
       }
+  articlesEl.innerHTML = articles.join("")
     });
