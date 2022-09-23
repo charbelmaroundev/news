@@ -14,5 +14,6 @@ $.getJSON("http://localhost/news/articles.php", data => {
                       <a href="${data[i]['url']}" class="position-absolute bottom-0 btn btn-primary w-100">More about</a>
               </div>
         `;
+        articles.push(article)
       }
     });
